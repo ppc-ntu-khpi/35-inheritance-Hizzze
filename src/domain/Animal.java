@@ -6,13 +6,15 @@ public class Animal {
 
     protected int weight;
 
+    protected int height;
+
     public Animal() {
-        name="generic animal";
-        weight=25;
+        name = "generic animal";
+        weight = 30;
     }
 
     public void eat() {
-        System.out.println("Animal eating...");
+        System.out.println(" Animal eating...");
     }
 
     public void speak() {
@@ -21,8 +23,8 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "My animal:" + "\nName:\t" + name + "\nWeight:\t" + weight+" kg";
+        return ("Animal:" + "\nname:\t" + name + "\nweight:\t" + weight+ "kg" +  "\nheight:\t" + height+ "cm");
     }
-
- 
 }
+
+   
